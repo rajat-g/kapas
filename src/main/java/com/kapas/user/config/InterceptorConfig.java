@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class InterceptorConfig implements WebMvcConfigurer {
 
     private final ApiInterceptor apiInterceptor;
-    private final String[] nonUserPathPatterns = new String[]{"/login"};
+    private final String[] nonUserPathPatterns = new String[]{"/login", "/register"};
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
